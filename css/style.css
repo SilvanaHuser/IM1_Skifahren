@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/Anton-Regular.woff2");
+}
+
+:root {
+    --global-max-width: 1200px;
+    --color-primary: #2C4859;
+    --color-light: #FFFAEF;
+    --color-contrast: #A85353
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 48px;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 36px;
+    color: var(--color-primary);
+}
+
+h3 {
+    font-size: 30px;
+    color: #555555;
+}
+
+
+body {
+    background-color: #FFFAEF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: var(--color-primary);
+}
+
+.logo {
+    width: 15rem;
+}
+
+.hauptnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: var(--global-max-width);
+    margin: 0 auto;
+}
+
+.hauptnav a {
+    font-family: Anton;
+    color: var(--color-light);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.hauptnav a:hover {
+    color: var(--color-contrast);
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+
+.headerbild {
+    background-image: url("../img/skifahren headerbild-3.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+.intro {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.intro p {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
